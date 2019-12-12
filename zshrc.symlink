@@ -51,7 +51,20 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew copyfile jsontools mix osx npm pip vscode python pip)
+plugins=(
+    git
+    brew
+    copyfile
+    jsontools
+    mix
+    osx
+    npm
+    pip
+    vscode
+    python
+    pip
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,6 +103,7 @@ alias gpu="git push -u origin"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias cl="clear"
+alias gs="git status"
 alias olul="echo \"⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢿⣿⠛⠃⠄⠄⠈⠉⠛⢿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⢿⣻⣯⠭⠤⠬⣉⣉⣛⣿⣿⣿⣶⣤⣀⠄⠈⠿⢿⣿
 ⣿⣿⣿⣿⣿⠿⠙⢈⡩⠤⠶⠶⠶⠦⠤⠤⣉⡉⠛⢯⡙⠻⣿⣷⣆⠄⠄⢹
