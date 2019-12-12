@@ -1,4 +1,5 @@
 set nocompatible
+set backspace=indent,eol,start
 set guifont=Menlo\ Regular:h18
 
 set number
@@ -39,17 +40,19 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'romainl/Apprentice'
 Plugin 'python-mode/python-mode'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'kien/ctrlp.vim'
+Plugin 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 call vundle#end()
 filetype plugin indent on
 syntax on
 let python_highlight_all=1
 
 set laststatus=2
-let g:airline_theme='wombat'
 
 let g:ycm_add_preview_to_completeopt=0
 let g:ycm_confirm_extra_conf=0
@@ -63,5 +66,10 @@ set relativenumber
 
 set nolazyredraw
 
-colorscheme Tomorrow-Night
+syntax on 
+colorscheme challenger_deep
+
+if has('nvim') || has('termguicolors')
+    set termguicolors
+endif
 
